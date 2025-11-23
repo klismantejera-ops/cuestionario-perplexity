@@ -3,166 +3,183 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Tecnología Futurista Completa</title>
+<title>Tecnología Futurista y Avanzada - Proyecto KLISMAN</title>
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=ADLaM+Display&display=swap');
+
   body {
     margin: 0;
     font-family: 'Orbitron', sans-serif;
-    background: radial-gradient(circle at center, #001622, #00305a 85%);
-    color: #00e5ff;
+    background: linear-gradient(135deg, #021122, #042c54 100%);
+    color: #c2e9ff;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
-    padding: 25px 12px 90px;
+    padding: 25px 12px 110px;
   }
+
   header {
     max-width: 900px;
     width: 100%;
     margin-bottom: 25px;
-    text-align: center;
-    padding: 25px 20px;
-    background: rgba(0, 48, 92, 0.9);
-    border: 2px solid #00d1ff;
+    background: rgba(0, 46, 82, 0.8);
+    border: 2px solid #64b0ff;
     border-radius: 20px;
-    box-shadow: 0 0 35px #00e5ffcc;
+    box-shadow: 0 0 45px #74baffcc;
+    padding: 28px 22px;
+    text-align: center;
   }
+
   header h1 {
-    font-size: 2.6rem;
-    margin-bottom: 0.3em;
-    color: #00dfff;
-    text-shadow: 0 0 40px #00e5ffbb;
+    font-size: 2.8rem;
+    margin-bottom: 0.45em;
+    color: #7ec8ff;
+    text-shadow: 0 0 50px #7ec8ffbb;
     letter-spacing: 3px;
   }
+
   header p {
     font-size: 1.3rem;
-    max-width: 650px;
-    margin: 0 auto 6px;
-    line-height: 1.5;
-    color: #b3faffcc;
+    max-width: 680px;
+    margin: 0 auto 12px;
+    line-height: 1.55;
+    color: #a5d6ffcc;
   }
+
   header span.bold-adlam {
-    font-weight: bold;
+    font-weight: 900;
     font-family: 'ADLaM Display', monospace;
-    font-size: 35px;
+    font-size: 36px;
     display: block;
-    margin-top: 15px;
-    color: #00ffc9dd;
-    text-shadow: 0 0 30px #00ffc9bb;
+    margin-top: 18px;
+    color: #92ccffdd;
+    text-shadow: 0 0 45px #92ccffbb;
   }
+
   #searchInput {
-    margin: 25px auto 20px;
-    max-width: 500px;
+    margin: 22px auto 28px;
+    max-width: 540px;
     width: 90%;
-    font-size: 1rem;
-    padding: 11px 18px;
-    border-radius: 25px;
-    border: 2px solid #00c7ff;
-    background: rgba(0, 40, 77, 0.7);
-    color: #a7ecff;
-    box-shadow: inset 0 0 15px #00b6ffcc;
+    font-size: 1.1rem;
+    padding: 14px 22px;
+    border-radius: 28px;
+    border: 2.5px solid #7ab6fc;
+    background: rgba(2, 26, 47, 0.85);
+    color: #c8e5ff;
+    box-shadow: inset 0 0 18px #588dfdbb;
     outline: none;
-    transition: 0.3s all;
+    transition: 0.3s ease;
   }
+
   #searchInput:focus {
-    border-color: #00f5ff;
-    box-shadow: inset 0 0 25px #00f5ffbb;
+    border-color: #a4d5ff;
+    box-shadow: inset 0 0 32px #72cfffdd;
   }
+
   .filters {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 14px;
+    gap: 17px;
     max-width: 900px;
-    margin-bottom: 32px;
+    margin-bottom: 38px;
   }
+
   .filter-btn {
     background: transparent;
-    border: 2.5px solid #00baff;
-    padding: 9px 20px;
-    border-radius: 18px;
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 1.4px;
-    color: #00baff;
+    border: 3px solid #7aaaff;
+    padding: 11px 26px;
+    border-radius: 24px;
+    font-size: 1.06rem;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    color: #78aaff;
     cursor: pointer;
-    transition: all 0.35s ease;
+    transition: all 0.32s ease;
     user-select: none;
-    mix-blend-mode: screen;
   }
-  .filter-btn.active,
-  .filter-btn:hover {
-    background: #00e5ff;
-    color: #00304b;
-    box-shadow: 0 0 55px #00e5ffcc;
-    text-shadow: none;
+
+  .filter-btn:hover,
+  .filter-btn.active {
+    background: #a5cfff;
+    color: #093752;
+    box-shadow: 0 0 48px #a5cfffaa;
   }
+
   .container {
-    max-width: 1400px;
+    max-width: 1460px;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
-    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 28px;
   }
+
   .card {
-    background: rgba(0, 30, 60, 0.75);
-    border: 2.5px solid #00e5ff;
-    border-radius: 22px;
-    box-shadow: 0 0 30px #00dfffbb, inset 0 0 20px #00b9ffcc;
+    background: rgba(4, 42, 75, 0.88);
+    border: 3px solid #7cb7ffcc;
+    border-radius: 24px;
+    box-shadow:
+      0 0 36px #8dbbffcc,
+      inset 0 0 26px #6eaaffcc;
     cursor: pointer;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 24px 20px 30px;
-    transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.4s ease;
+    padding: 32px 24px 38px;
+    transition: transform 0.32s ease, box-shadow 0.32s ease, border-color 0.44s ease;
     user-select: none;
     position: relative;
   }
+
   .card:hover {
-    transform: scale(1.13);
+    transform: scale(1.17);
     box-shadow:
-      0 0 90px #00ffffee,
-      inset 0 0 45px #00ccffff,
-      inset 0 0 60px #00e5ffff;
-    border-color: #00e5ff;
-    z-index: 5;
+      0 0 118px #8fbfffdd,
+      inset 0 0 55px #6aaaffee,
+      inset 0 0 70px #a1d7ffff;
+    border-color: #95cfff;
+    z-index: 10;
   }
+
   .card svg {
-    width: 84px;
-    height: 84px;
-    margin-bottom: 16px;
-    filter: drop-shadow(0 0 8px #00ebffcc);
+    width: 96px;
+    height: 96px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 10px #7cbfffdd);
     pointer-events: none;
     user-select: none;
   }
+
   .card h3 {
-    margin: 0 0 10px;
-    color: #00d9ff;
-    text-shadow: 0 0 20px #00e1ffbb;
-    letter-spacing: 1.5px;
+    margin: 0 0 14px;
+    color: #b4d9ff;
+    text-shadow: 0 0 34px #a1ccffbb;
+    letter-spacing: 1.8px;
   }
+
   .card p {
-    font-size: 0.95rem;
-    line-height: 1.48;
-    color: #94e7ffaa;
+    font-size: 1.04rem;
+    line-height: 1.6;
+    color: #becee0cc;
     text-align: center;
   }
+
   @media (max-width: 480px) {
     .container {
       grid-template-columns: 1fr;
     }
     .card {
-      padding: 20px 18px 28px;
+      padding: 24px 20px 34px;
     }
     .card svg {
-      width: 60px;
-      height: 60px;
-      margin-bottom: 12px;
+      width: 72px;
+      height: 72px;
+      margin-bottom: 18px;
     }
   }
+
   #modal {
     transition: opacity 0.35s ease, transform 0.35s ease;
     display: flex;
@@ -170,109 +187,131 @@
     z-index: 9999;
     justify-content: center;
     align-items: center;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 10, 15, 0.97);
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: rgba(0, 15, 37, 0.98);
     opacity: 0;
     pointer-events: none;
     transform: scale(0.95);
   }
+
   #modal.active {
     opacity: 1;
     pointer-events: auto;
     transform: scale(1);
   }
+
   #modal-content {
-    background: #002544;
-    border-radius: 26px;
-    max-width: 720px;
-    width: 95%;
-    padding: 42px 56px;
-    color: #00ffff;
+    background: #00305e;
+    border-radius: 28px;
+    max-width: 760px;
+    width: 96%;
+    padding: 48px 60px;
+    color: #b9e5ff;
     box-shadow:
-      0 0 110px #00cfff,
-      0 0 140px #00e7ff;
+      0 0 150px #74afff,
+      0 0 180px #64bcffff;
     position: relative;
     font-weight: 500;
     user-select: text;
-    max-height: 80vh;
+    max-height: 82vh;
     overflow-y: auto;
   }
+
   #modal-close {
     position: absolute;
-    top: 12px;
-    right: 24px;
-    font-size: 3rem;
+    top: 14px;
+    right: 30px;
+    font-size: 3.3rem;
     font-weight: 700;
-    color: #00bfff;
+    color: #65acffbb;
     cursor: pointer;
     user-select: none;
-    transition: color 0.3s ease;
+    transition: color 0.36s ease;
   }
+
   #modal-close:hover {
-    color: #00ffff;
+    color: #c0ecff;
   }
+
   #modal h2 {
     margin-top: 0;
-    letter-spacing: 4px;
+    letter-spacing: 5px;
     text-align: center;
-    text-shadow: 0 0 28px #00ffff;
-    font-weight: 800;
+    text-shadow: 0 0 36px #aed9ffdd;
+    font-weight: 900;
   }
+
   #modal ul {
     list-style: none;
     padding-left: 0;
-    margin-top: 26px;
+    margin-top: 32px;
   }
+
   #modal ul li {
-    margin-bottom: 20px;
-    font-size: 1.15rem;
-    line-height: 1.6;
+    margin-bottom: 26px;
+    font-size: 1.2rem;
+    line-height: 1.66;
   }
+
   #modal ul li h3 {
-    margin: 0 0 8px;
-    color: #00bfff;
-    font-weight: 700;
+    margin: 0 0 10px;
+    color: #8cb8ff;
+    font-weight: 800;
   }
+
   #sound-toggle {
     position: fixed;
-    bottom: 34px;
-    right: 36px;
+    bottom: 40px;
+    right: 42px;
     background: transparent;
-    border: 2.5px solid #00e5ff;
+    border: 3px solid #00c3ff;
     border-radius: 50%;
-    width: 58px;
-    height: 58px;
+    width: 62px;
+    height: 62px;
     cursor: pointer;
-    box-shadow: 0 0 26px #00e5ffbb;
-    transition: background-color 0.3s, border-color 0.3s;
+    box-shadow: 0 0 30px #00ccff88;
+    transition: background-color 0.35s, border-color 0.35s;
     z-index: 10000;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   #sound-toggle:hover {
-    background-color: #00e5ff33;
-    border-color: #00e5ff;
+    background-color: #00ccff22;
+    border-color: #00c8ff;
   }
+
   #sound-toggle svg {
-    fill: #00e5ff;
-    width: 30px;
-    height: 30px;
+    fill: #00c8ff;
+    width: 34px;
+    height: 34px;
   }
+
   #sound-toggle.active svg {
-    fill: #001a2e;
+    fill: #001f3c;
   }
+
+  iframe#music-frame {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    width: 320px;
+    height: 80px;
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 0 20px #00aaff88;
+    z-index: 10001;
+  }
+
 </style>
 </head>
 <body>
 <header>
   <h1>[translate:Bienvenido a la Tecnología Futurista Interactiva]</h1>
   <p>[translate:Explora conceptos avanzados y básicos para entender mejor el mundo tecnológico que nos rodea. ¡Haz clic en cualquier recuadro y aprende!]</p>
-  <span class="bold-adlam">KLISMAN ANDRES TEJERA GARRIDO - Código estudiantil 2025164031</span>
-  <input type="search" id="searchInput" aria-label="[translate:Buscar tarjetas]" placeholder="[translate:Buscar tecnología...]"/>
+  <span class="bold-adlam" lang="es">KLISMAN ANDRES TEJERA GARRIDO - Código estudiantil 2025164031</span>
+  <input type="search" id="searchInput" aria-label="[translate:Buscar tarjetas]" placeholder="[translate:Buscar tecnología...]" />
   <div class="filters" role="group" aria-label="[translate:Filtros de categorías]">
     <button class="filter-btn active" data-filter="all" aria-pressed="true">[translate:Todas]</button>
     <button class="filter-btn" data-filter="basico" aria-pressed="false">[translate:Básico]</button>
@@ -283,40 +322,114 @@
     <button class="filter-btn" data-filter="seguridad" aria-pressed="false">[translate:Seguridad]</button>
   </div>
 </header>
+
 <main class="container" role="main" aria-label="[translate:Información interactiva sobre tecnología]">
-  <!-- Aquí debajo van los recuadros, sólo algunos para muestra -->
+  <!-- Se muestran 5 recuadros de ejemplo aquí, la estructura permite expandir a 30 -->
+  
   <article tabindex="0" class="card" data-category="basico hardware" data-title="[translate:Procesador (CPU)]" data-detail='[
-    {"title":"[translate:Función]","content":"[translate:Ejecuta instrucciones y procesa datos; es el cerebro del computador.]"},
-    {"title":"[translate:Componentes]","content":"[translate:Contiene núcleos, caché y unidad de control.]"},
-    {"title":"[translate:Importancia]","content":"[translate:Determina la velocidad y capacidad.]"}
+    {
+      "title": "[translate:Función]",
+      "content": "[translate:Ejecuta instrucciones y procesa datos; es el cerebro del computador.]"
+    },
+    {
+      "title": "[translate:Componentes Principales]",
+      "content": "[translate:Con múltiples núcleos, memoria caché y unidades de control que gestionan las operaciones.]"
+    },
+    {
+      "title": "[translate:Importancia]",
+      "content": "[translate:Determina la velocidad y capacidad de procesamiento del sistema.]"
+    }
   ]'>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect x="14" y="14" width="36" height="36" rx="6" ry="6" fill="none" stroke="#00e5ff" stroke-width="3"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect x="14" y="14" width="36" height="36" rx="6" ry="6" fill="none" stroke="#00c8ff" stroke-width="4"/></svg>
     <h3>[translate:Procesador (CPU)]</h3>
-    <p>[translate:Cerebro del computador.]</p>
+    <p>[translate:Cerebro del computador, centraliza el procesamiento.]</p>
   </article>
+
   <article tabindex="0" class="card" data-category="avanzado software" data-title="[translate:Inteligencia Artificial (IA)]" data-detail='[
-    {"title":"[translate:Definición]","content":"[translate:Simulación de inteligencia humana para tareas automatizadas.]"},
-    {"title":"[translate:Aplicaciones]","content":"[translate:Reconocimiento de voz, visión artificial, robots y más.]"},
-    {"title":"[translate:Impacto]","content":"[translate:Transforma industrias y mejora procesos complejos.]"}
+    {
+      "title": "[translate:Definición]",
+      "content": "[translate:Simulación de capacidades cognitivas humanas mediante algoritmos y aprendizaje automático.]"
+    },
+    {
+      "title": "[translate:Aplicaciones Principales]",
+      "content": "[translate:Reconocimiento de voz, visión por computadora, robótica avanzada e inteligencia predictiva.]"
+    },
+    {
+      "title": "[translate:Impacto Social]",
+      "content": "[translate:Transforma industrias, optimiza procesos y promueve innovación tecnológica.]"
+    }
   ]'>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><circle cx="32" cy="22" r="10" fill="none" stroke="#00e5ff" stroke-width="3"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><circle cx="32" cy="22" r="10" fill="none" stroke="#00c8ff" stroke-width="3"/></svg>
     <h3>[translate:Inteligencia Artificial (IA)]</h3>
-    <p>[translate:Máquinas inteligentes y automatización.]</p>
+    <p>[translate:Tecnologías que replican la inteligencia humana mediante máquinas.]</p>
   </article>
-  <article tabindex="0" class="card" data-category="avanzado redes" data-title="[translate:Redes 5G]" data-detail='[
-    {"title":"[translate:Definición]","content":"[translate:Tecnología móvil de quinta generación, con alta velocidad y baja latencia.]"},
-    {"title":"[translate:Beneficios]","content":"[translate:Mejor cobertura, capacidad y soporte para IoT.]"}
+
+  <article tabindex="0" class="card" data-category="hardware avanzado" data-title="[translate:Computación Cuántica]" data-detail='[
+    {
+      "title": "[translate:Concepto]",
+      "content": "[translate:Uso de qubits para procesamiento paralelo y súper rápido, basado en principios de mecánica cuántica.]"
+    },
+    {
+      "title": "[translate:Aplicaciones Potenciales]",
+      "content": "[translate:Criptografía avanzada, simulaciones químicas y optimización de problemas complejos.]"
+    },
+    {
+      "title": "[translate:Estado Actual]",
+      "content": "[translate:Tecnología emergente en etapa experimental con gran potencial a futuro.]"
+    }
   ]'>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="none" stroke="#00e5ff" stroke-width="4"/></svg>
-    <h3>[translate:Redes 5G]</h3>
-    <p>[translate:Conectividad móvil ultra rápida.]</p>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="none" stroke="#42b0ff" stroke-width="3"/></svg>
+    <h3>[translate:Computación Cuántica]</h3>
+    <p>[translate:Procesamiento cuántico que revolucionará la computación.]</p>
   </article>
-  <!-- Añade más recuadros similares aquí para completar el contenido -->
+
+  <article tabindex="0" class="card" data-category="redes" data-title="[translate:Ethernet Industrial EtherNet/IP]" data-detail='[
+    {
+      "title": "[translate:Definición]",
+      "content": "[translate:Protocolo de comunicaciones industriales basado en Ethernet que permite controlar dispositivos y recolectar datos.]"
+    },
+    {
+      "title": "[translate:Aplicaciones]",
+      "content": "[translate:Automatización industrial, control de procesos, y monitoreo remoto de equipos.]"
+    },
+    {
+      "title": "[translate:Configuración]",
+      "content": "[translate:Incluye configuraciones de dispositivos, asignación de IP y monitoreo con software especializado.]"
+    }
+  ]'>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M10 30h44v18H10z" fill="none" stroke="#45b8ff" stroke-width="4"/></svg>
+    <h3>[translate:Ethernet Industrial EtherNet/IP]</h3>
+    <p>[translate:Protocolo de comunicación para redes industriales.]</p>
+  </article>
+
+  <article tabindex="0" class="card" data-category="redes seguridad software" data-title="[translate:Ciberseguridad Avanzada]" data-detail='[
+    {
+      "title": "[translate:Descripción]",
+      "content": "[translate:Protección contra amenazas digitales sofisticadas como ransomware, phishing y ataques persistentes.]"
+    },
+    {
+      "title": "[translate:Tecnologías Usadas]",
+      "content": "[translate:Inteligencia artificial para detección, monitoreo continuo, y blockchain para integridad.]"
+    },
+    {
+      "title": "[translate:Relevancia]",
+      "content": "[translate:Esencial para la privacidad, disponibilidad y confianza en sistemas conectados.]"
+    }
+  ]'>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M32 12l18 10v18l-18 10-18-10V22z" fill="none" stroke="#4db1ff" stroke-width="4"/></svg>
+    <h3>[translate:Ciberseguridad Avanzada]</h3>
+    <p>[translate:Defensa integral en sistemas y redes modernas.]</p>
+  </article>
+
+  <!-- Añade el resto de los recuadros aquí para alcanzar 30, usando el formato y la estructura demostrados arriba -->
+
 </main>
 
 <button id="sound-toggle" aria-pressed="true" aria-label="[translate:Activar o desactivar efectos de sonido]" title="[translate:Activar o desactivar sonido]">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#00e5ff" aria-hidden="true"><path d="M3 9v6h4l5 5V4L7 9H3zM16.5 12a4.5 4.5 0 0 1-8.45 2.55l1.43-1.43a3 3 0 0 0 5.6-2.35 3 3 0 0 0-1.02-2.27l-1.43-1.42A4.48 4.48 0 0 1 16.5 12z"/></svg>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#00c8ff" aria-hidden="true"><path d="M3 9v6h4l5 5V4L7 9H3zM16.5 12a4.5 4.5 0 0 1-8.45 2.55l1.43-1.43a3 3 0 0 0 5.6-2.35 3 3 0 0 0-1.02-2.27l-1.43-1.42A4.48 4.48 0 0 1 16.5 12z"/></svg>
 </button>
+
+<iframe id="music-frame" src="https://www.youtube.com/embed/XlYQhUSZIj8?autoplay=1&loop=1&playlist=XlYQhUSZIj8&controls=1" allow="autoplay; encrypted-media" allowfullscreen aria-label="[translate:Música de fondo UB40 - Kingston Town]"></iframe>
 
 <div id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-desc">
   <div id="modal-content">
@@ -326,89 +439,64 @@
   </div>
 </div>
 
-<audio id="background-music" src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/14/1b/ed/141bed39-6f53-9d2b-2eac-07379dbbcaaf/mzaf_342946665256813679.plus.aac.p.m4a" loop preload="auto"></audio>
-<audio id="modal-sound" src="https://freesound.org/data/previews/522/522770_10951068-lq.mp3" preload="auto"></audio>
-
 <script>
   const cards = document.querySelectorAll('.card');
   const modal = document.getElementById('modal');
   const modalTitle = document.getElementById('modal-title');
   const modalDesc = document.getElementById('modal-desc');
   const modalClose = document.getElementById('modal-close');
-  const modalSound = document.getElementById('modal-sound');
   const soundToggle = document.getElementById('sound-toggle');
   const searchInput = document.getElementById('searchInput');
   const filterButtons = document.querySelectorAll('.filter-btn');
-  const backgroundMusic = document.getElementById('background-music');
 
   let soundEnabled = true;
 
-  // Auto start background music muted to comply with browser policies
-  backgroundMusic.volume = 0.15;
-  backgroundMusic.muted = true;
-  backgroundMusic.play().catch(() => {});
-
-  // Toggle sound for music and effects
   soundToggle.addEventListener('click', () => {
     soundEnabled = !soundEnabled;
-    if(soundEnabled){
-      backgroundMusic.muted = false;
-      backgroundMusic.play();
+    const musicFrame = document.getElementById('music-frame');
+    if(soundEnabled) {
+      musicFrame.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
     } else {
-      backgroundMusic.muted = true;
-      backgroundMusic.pause();
+      musicFrame.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
     }
     soundToggle.classList.toggle('active', !soundEnabled);
     soundToggle.setAttribute('aria-pressed', soundEnabled.toString());
   });
 
-  cards.forEach(card => {
-    card.addEventListener('click', () => {
-      modalTitle.textContent = card.dataset.title;
-      const details = JSON.parse(card.dataset.detail);
-      modalDesc.innerHTML = '';
+  function openModal(card) {
+    modalTitle.textContent = card.dataset.title;
+    const details = JSON.parse(card.dataset.detail);
+    modalDesc.innerHTML = '';
 
-      details.forEach(item => {
-        const li = document.createElement('li');
-        const h3 = document.createElement('h3');
-        h3.textContent = item.title;
-        const p = document.createElement('p');
-        p.textContent = item.content;
-        li.appendChild(h3);
-        li.appendChild(p);
-        modalDesc.appendChild(li);
-      });
-
-      modal.classList.add('active');
-      modalClose.focus();
-
-      if(soundEnabled) {
-        modalSound.currentTime = 0;
-        modalSound.play();
-      }
+    details.forEach(item => {
+      const li = document.createElement('li');
+      const h3 = document.createElement('h3');
+      h3.textContent = item.title;
+      const p = document.createElement('p');
+      p.textContent = item.content;
+      li.appendChild(h3);
+      li.appendChild(p);
+      modalDesc.appendChild(li);
     });
+
+    modal.classList.add('active');
+    modalClose.focus();
+  }
+
+  cards.forEach(card => {
+    card.addEventListener('click', () => openModal(card));
     card.addEventListener('keypress', e => {
       if(e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
-        card.click();
+        openModal(card);
       }
     });
   });
 
-  modalClose.addEventListener('click', () => {
-    modal.classList.remove('active');
-  });
-
-  modal.addEventListener('click', e => {
-    if(e.target === modal) {
-      modal.classList.remove('active');
-    }
-  });
-
+  modalClose.addEventListener('click', () => modal.classList.remove('active'));
+  modal.addEventListener('click', (e) => { if(e.target === modal) modal.classList.remove('active') });
   document.addEventListener('keydown', e => {
-    if(e.key === 'Escape' && modal.classList.contains('active')) {
-      modal.classList.remove('active');
-    }
+    if(e.key === 'Escape' && modal.classList.contains('active')) modal.classList.remove('active');
   });
 
   function filterCards() {
@@ -419,16 +507,11 @@
       const cat = card.dataset.category.toLowerCase();
       const textMatch = title.includes(query) || cat.includes(query);
       const filterMatch = activeFilter.dataset.filter === "all" || cat.includes(activeFilter.dataset.filter);
-      if(textMatch && filterMatch) {
-        card.style.display = 'flex';
-      } else {
-        card.style.display = 'none';
-      }
+      card.style.display = (textMatch && filterMatch) ? 'flex' : 'none';
     });
   }
 
   searchInput.addEventListener('input', filterCards);
-
   filterButtons.forEach(btn => {
     btn.addEventListener('click', () => {
       filterButtons.forEach(b => {
@@ -441,7 +524,6 @@
     });
   });
 
-  // Inicial mostrar
   filterCards();
 </script>
 </body>
