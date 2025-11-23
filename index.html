@@ -62,7 +62,7 @@
     max-width: 540px;
     width: 90%;
     font-size: 1.1rem;
-    padding: 14px 22px;
+    padding: 12px 20px;
     border-radius: 28px;
     border: 2.5px solid #7ab6fc;
     background: rgba(2, 26, 47, 0.85);
@@ -160,8 +160,8 @@
   }
 
   .card p {
-    font-size: 1.04rem;
-    line-height: 1.6;
+    font-size: 1rem;
+    line-height: 1.5;
     color: #becee0cc;
     text-align: center;
   }
@@ -235,7 +235,7 @@
 
   #modal h2 {
     margin-top: 0;
-    letter-spacing: 5px;
+    letter-spacing: 4.5px;
     text-align: center;
     text-shadow: 0 0 36px #aed9ffdd;
     font-weight: 900;
@@ -266,10 +266,10 @@
     background: transparent;
     border: 3px solid #00c3ff;
     border-radius: 50%;
-    width: 62px;
-    height: 62px;
+    width: 60px;
+    height: 60px;
     cursor: pointer;
-    box-shadow: 0 0 30px #00ccff88;
+    box-shadow: 0 0 28px #00ccff88;
     transition: background-color 0.35s, border-color 0.35s;
     z-index: 10000;
     display: flex;
@@ -278,14 +278,14 @@
   }
 
   #sound-toggle:hover {
-    background-color: #00ccff22;
+    background-color: #00ccff33;
     border-color: #00c8ff;
   }
 
   #sound-toggle svg {
     fill: #00c8ff;
-    width: 34px;
-    height: 34px;
+    width: 32px;
+    height: 32px;
   }
 
   #sound-toggle.active svg {
@@ -303,137 +303,106 @@
     box-shadow: 0 0 20px #00aaff88;
     z-index: 10001;
   }
-
 </style>
 </head>
 <body>
 <header>
-  <h1>[translate:Bienvenido a la Tecnología Futurista Interactiva]</h1>
-  <p>[translate:Explora conceptos avanzados y básicos para entender mejor el mundo tecnológico que nos rodea. ¡Haz clic en cualquier recuadro y aprende!]</p>
-  <span class="bold-adlam" lang="es">KLISMAN ANDRES TEJERA GARRIDO - Código estudiantil 2025164031</span>
-  <input type="search" id="searchInput" aria-label="[translate:Buscar tarjetas]" placeholder="[translate:Buscar tecnología...]" />
-  <div class="filters" role="group" aria-label="[translate:Filtros de categorías]">
-    <button class="filter-btn active" data-filter="all" aria-pressed="true">[translate:Todas]</button>
-    <button class="filter-btn" data-filter="basico" aria-pressed="false">[translate:Básico]</button>
-    <button class="filter-btn" data-filter="avanzado" aria-pressed="false">[translate:Avanzado]</button>
-    <button class="filter-btn" data-filter="redes" aria-pressed="false">[translate:Redes]</button>
-    <button class="filter-btn" data-filter="software" aria-pressed="false">[translate:Software]</button>
-    <button class="filter-btn" data-filter="hardware" aria-pressed="false">[translate:Hardware]</button>
-    <button class="filter-btn" data-filter="seguridad" aria-pressed="false">[translate:Seguridad]</button>
+  <h1>Bienvenido a la Tecnología Futurista Interactiva</h1>
+  <p>Explora conceptos avanzados y básicos para entender mejor el mundo tecnológico que nos rodea. ¡Haz clic en cualquier recuadro y aprende!</p>
+  <span class="bold-adlam">KLISMAN ANDRES TEJERA GARRIDO - Código estudiantil 2025164031</span>
+  <input type="search" id="searchInput" aria-label="Buscar tarjetas" placeholder="Buscar tecnología..." />
+  <div class="filters" role="group" aria-label="Filtros de categorías">
+    <button class="filter-btn active" data-filter="all" aria-pressed="true">Todas</button>
+    <button class="filter-btn" data-filter="basico" aria-pressed="false">Básico</button>
+    <button class="filter-btn" data-filter="avanzado" aria-pressed="false">Avanzado</button>
+    <button class="filter-btn" data-filter="redes" aria-pressed="false">Redes</button>
+    <button class="filter-btn" data-filter="software" aria-pressed="false">Software</button>
+    <button class="filter-btn" data-filter="hardware" aria-pressed="false">Hardware</button>
+    <button class="filter-btn" data-filter="seguridad" aria-pressed="false">Seguridad</button>
   </div>
 </header>
 
-<main class="container" role="main" aria-label="[translate:Información interactiva sobre tecnología]">
-  <!-- Se muestran 5 recuadros de ejemplo aquí, la estructura permite expandir a 30 -->
-  
-  <article tabindex="0" class="card" data-category="basico hardware" data-title="[translate:Procesador (CPU)]" data-detail='[
+<main class="container" role="main" aria-label="Información interactiva sobre tecnología">
+  <article tabindex="0" class="card" data-category="basico hardware" data-title="Historia y Evolución de la Informática" data-detail='[
     {
-      "title": "[translate:Función]",
-      "content": "[translate:Ejecuta instrucciones y procesa datos; es el cerebro del computador.]"
+      "title": "Origen",
+      "content": "La informática nace como una necesidad de automatizar cálculos complejos, comenzando con la máquina analítica de Charles Babbage."
     },
     {
-      "title": "[translate:Componentes Principales]",
-      "content": "[translate:Con múltiples núcleos, memoria caché y unidades de control que gestionan las operaciones.]"
+      "title": "Evolución",
+      "content": "Con el desarrollo de máquinas electrónicas en la Segunda Guerra Mundial y la invención del transistor, la informática se masificó."
     },
     {
-      "title": "[translate:Importancia]",
-      "content": "[translate:Determina la velocidad y capacidad de procesamiento del sistema.]"
+      "title": "Consolidación",
+      "content": "Surgieron sistemas operativos modernos y lenguajes avanzados, dando soporte a la sociedad digital actual."
     }
+  ]'>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M32 2a30 30 0 1 0 0 60 30 30 0 0 0 0-60z" fill="none" stroke="#00c8ff" stroke-width="3"/></svg>
+    <h3>Historia y Evolución de la Informática</h3>
+    <p>Desde la máquina analítica hasta la era digital.</p>
+  </article>
+
+  <article tabindex="0" class="card" data-category="basico hardware" data-title="Hardware – Fundamentos y Evolución" data-detail='[
+    {
+      "title": "Definición",
+      "content": "El hardware son los componentes físicos del computador, incluyendo discos duros, placas base y circuitos."
+    },
+    {
+      "title": "Evolución",
+      "content": "Evolucionó desde válvulas de vacío a microprocesadores modernos, mejorando capacidad y eficiencia."
+    },
+    {
+      "title": "Función",
+      "content": "Proporciona la estructura física para que el software funcione y realice tareas."
+    }
+  ]'>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect x="8" y="8" width="48" height="48" fill="none" stroke="#00c8ff" stroke-width="4" rx="10"/></svg>
+    <h3>Hardware – Fundamentos y Evolución</h3>
+    <p>Componentes físicos y su desarrollo.</p>
+  </article>
+
+  <article tabindex="0" class="card" data-category="avanzado redes" data-title="Principios básicos de EtherNet/IP" data-detail='[
+    {
+      "title": "Definición",
+      "content": "Protocolo industrial basado en Ethernet para controlar dispositivos y recolectar datos en tiempo real."
+    },
+    {
+      "title": "Aplicaciones",
+      "content": "Automatización industrial, supervisión de procesos y control remoto con alta eficiencia."
+    },
+    {
+      "title": "Configuración",
+      "content": "Incluye configuración avanzada de dispositivos y monitoreo con software especializado."
+    }
+  ]'>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M10 30h44v18H10z" fill="none" stroke="#00c8ff" stroke-width="4"/></svg>
+    <h3>Principios básicos de EtherNet/IP</h3>
+    <p>Protocolo para redes industriales.</p>
+  </article>
+
+  <article tabindex="0" class="card" data-category="basico hardware" data-title="Procesador (CPU)" data-detail='[
+    {"title":"Función","content":"Ejecuta instrucciones y procesa datos; es el cerebro del computador."},
+    {"title":"Componentes","content":"Con múltiples núcleos, memoria caché y unidad de control."},
+    {"title":"Importancia","content":"Determina la velocidad y capacidad de procesamiento del sistema."}
   ]'>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect x="14" y="14" width="36" height="36" rx="6" ry="6" fill="none" stroke="#00c8ff" stroke-width="4"/></svg>
-    <h3>[translate:Procesador (CPU)]</h3>
-    <p>[translate:Cerebro del computador, centraliza el procesamiento.]</p>
+    <h3>Procesador (CPU)</h3>
+    <p>Cerebro del computador, centraliza el procesamiento.</p>
   </article>
 
-  <article tabindex="0" class="card" data-category="avanzado software" data-title="[translate:Inteligencia Artificial (IA)]" data-detail='[
-    {
-      "title": "[translate:Definición]",
-      "content": "[translate:Simulación de capacidades cognitivas humanas mediante algoritmos y aprendizaje automático.]"
-    },
-    {
-      "title": "[translate:Aplicaciones Principales]",
-      "content": "[translate:Reconocimiento de voz, visión por computadora, robótica avanzada e inteligencia predictiva.]"
-    },
-    {
-      "title": "[translate:Impacto Social]",
-      "content": "[translate:Transforma industrias, optimiza procesos y promueve innovación tecnológica.]"
-    }
-  ]'>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><circle cx="32" cy="22" r="10" fill="none" stroke="#00c8ff" stroke-width="3"/></svg>
-    <h3>[translate:Inteligencia Artificial (IA)]</h3>
-    <p>[translate:Tecnologías que replican la inteligencia humana mediante máquinas.]</p>
-  </article>
-
-  <article tabindex="0" class="card" data-category="hardware avanzado" data-title="[translate:Computación Cuántica]" data-detail='[
-    {
-      "title": "[translate:Concepto]",
-      "content": "[translate:Uso de qubits para procesamiento paralelo y súper rápido, basado en principios de mecánica cuántica.]"
-    },
-    {
-      "title": "[translate:Aplicaciones Potenciales]",
-      "content": "[translate:Criptografía avanzada, simulaciones químicas y optimización de problemas complejos.]"
-    },
-    {
-      "title": "[translate:Estado Actual]",
-      "content": "[translate:Tecnología emergente en etapa experimental con gran potencial a futuro.]"
-    }
-  ]'>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><circle cx="32" cy="32" r="28" fill="none" stroke="#42b0ff" stroke-width="3"/></svg>
-    <h3>[translate:Computación Cuántica]</h3>
-    <p>[translate:Procesamiento cuántico que revolucionará la computación.]</p>
-  </article>
-
-  <article tabindex="0" class="card" data-category="redes" data-title="[translate:Ethernet Industrial EtherNet/IP]" data-detail='[
-    {
-      "title": "[translate:Definición]",
-      "content": "[translate:Protocolo de comunicaciones industriales basado en Ethernet que permite controlar dispositivos y recolectar datos.]"
-    },
-    {
-      "title": "[translate:Aplicaciones]",
-      "content": "[translate:Automatización industrial, control de procesos, y monitoreo remoto de equipos.]"
-    },
-    {
-      "title": "[translate:Configuración]",
-      "content": "[translate:Incluye configuraciones de dispositivos, asignación de IP y monitoreo con software especializado.]"
-    }
-  ]'>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M10 30h44v18H10z" fill="none" stroke="#45b8ff" stroke-width="4"/></svg>
-    <h3>[translate:Ethernet Industrial EtherNet/IP]</h3>
-    <p>[translate:Protocolo de comunicación para redes industriales.]</p>
-  </article>
-
-  <article tabindex="0" class="card" data-category="redes seguridad software" data-title="[translate:Ciberseguridad Avanzada]" data-detail='[
-    {
-      "title": "[translate:Descripción]",
-      "content": "[translate:Protección contra amenazas digitales sofisticadas como ransomware, phishing y ataques persistentes.]"
-    },
-    {
-      "title": "[translate:Tecnologías Usadas]",
-      "content": "[translate:Inteligencia artificial para detección, monitoreo continuo, y blockchain para integridad.]"
-    },
-    {
-      "title": "[translate:Relevancia]",
-      "content": "[translate:Esencial para la privacidad, disponibilidad y confianza en sistemas conectados.]"
-    }
-  ]'>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M32 12l18 10v18l-18 10-18-10V22z" fill="none" stroke="#4db1ff" stroke-width="4"/></svg>
-    <h3>[translate:Ciberseguridad Avanzada]</h3>
-    <p>[translate:Defensa integral en sistemas y redes modernas.]</p>
-  </article>
-
-  <!-- Añade el resto de los recuadros aquí para alcanzar 30, usando el formato y la estructura demostrados arriba -->
+  <!-- Continuar añadiendo recuadros para completar 30 -->
 
 </main>
 
-<button id="sound-toggle" aria-pressed="true" aria-label="[translate:Activar o desactivar efectos de sonido]" title="[translate:Activar o desactivar sonido]">
+<button id="sound-toggle" aria-pressed="true" aria-label="Activar o desactivar efectos de sonido" title="Activar o desactivar sonido">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#00c8ff" aria-hidden="true"><path d="M3 9v6h4l5 5V4L7 9H3zM16.5 12a4.5 4.5 0 0 1-8.45 2.55l1.43-1.43a3 3 0 0 0 5.6-2.35 3 3 0 0 0-1.02-2.27l-1.43-1.42A4.48 4.48 0 0 1 16.5 12z"/></svg>
 </button>
 
-<iframe id="music-frame" src="https://www.youtube.com/embed/XlYQhUSZIj8?autoplay=1&loop=1&playlist=XlYQhUSZIj8&controls=1" allow="autoplay; encrypted-media" allowfullscreen aria-label="[translate:Música de fondo UB40 - Kingston Town]"></iframe>
+<iframe id="music-frame" src="https://www.youtube.com/embed/XlYQhUSZIj8?autoplay=1&loop=1&playlist=XlYQhUSZIj8&controls=1" allow="autoplay; encrypted-media" allowfullscreen aria-label="Música de fondo UB40 - Kingston Town" style="position: fixed; bottom: 10px; left: 10px; width: 320px; height: 80px; border: none; border-radius: 14px; box-shadow: 0 0 20px #00aaff88; z-index: 10001;"></iframe>
 
 <div id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-desc">
   <div id="modal-content">
-    <span id="modal-close" role="button" aria-label="[translate:Cerrar ventana]" tabindex="0">&times;</span>
+    <span id="modal-close" role="button" aria-label="Cerrar ventana" tabindex="0">&times;</span>
     <h2 id="modal-title"></h2>
     <ul id="modal-desc"></ul>
   </div>
@@ -448,13 +417,12 @@
   const soundToggle = document.getElementById('sound-toggle');
   const searchInput = document.getElementById('searchInput');
   const filterButtons = document.querySelectorAll('.filter-btn');
-
+  const musicFrame = document.getElementById('music-frame');
   let soundEnabled = true;
 
   soundToggle.addEventListener('click', () => {
     soundEnabled = !soundEnabled;
-    const musicFrame = document.getElementById('music-frame');
-    if(soundEnabled) {
+    if (soundEnabled) {
       musicFrame.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
     } else {
       musicFrame.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
@@ -486,7 +454,7 @@
   cards.forEach(card => {
     card.addEventListener('click', () => openModal(card));
     card.addEventListener('keypress', e => {
-      if(e.key === 'Enter' || e.key === ' ') {
+      if (e.key === 'Enter' || e.key === ' ') {
         e.preventDefault();
         openModal(card);
       }
@@ -494,9 +462,9 @@
   });
 
   modalClose.addEventListener('click', () => modal.classList.remove('active'));
-  modal.addEventListener('click', (e) => { if(e.target === modal) modal.classList.remove('active') });
+  modal.addEventListener('click', (e) => { if (e.target === modal) modal.classList.remove('active'); });
   document.addEventListener('keydown', e => {
-    if(e.key === 'Escape' && modal.classList.contains('active')) modal.classList.remove('active');
+    if (e.key === 'Escape' && modal.classList.contains('active')) modal.classList.remove('active');
   });
 
   function filterCards() {
